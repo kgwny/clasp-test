@@ -4,6 +4,19 @@ import { SheetService } from './sheet.service';
 declare let global: any;
 
 global.createNewFile = (): void => {
+  (async () => {
+    console.log(await hidouki('test1'));
+    console.log(douki('test2'));
+  })();
+
   const ss = SheetService.createInitialFile('New file');
-  ss.getRange('A2').setValue('Happy gas!');
+  ss.getRange('A3').setValue('hoge');
+};
+
+const hidouki = (hoge: string) => {
+  return Promise.resolve(hoge);
+};
+
+const douki = (piyo: string) => {
+  return piyo;
 };
