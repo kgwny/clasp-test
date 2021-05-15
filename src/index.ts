@@ -3,7 +3,6 @@ import { SheetService } from './sheet.service';
 declare let global: any;
 
 global.createNewFile = (): void => {
-
   const hoge = new Promise((resolve) => {
     const resolveValue = 'resolved1';
     console.log(`promise1 = ${resolveValue}`);

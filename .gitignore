@@ -8,8 +8,5 @@ yarn-error.log*
 # Dependency directories
 node_modules/
 
-# Editor
-.idea/
-
 # Build directory
 dist/
